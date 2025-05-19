@@ -7,27 +7,49 @@ const useStyles = makeStyles({
     backgroundColor: "pink",
     borderRadius: "64px",
   },
+
   icon: {
     color: "blue",
     backgroundColor: "white",
   },
+
   primaryButton: {
-    fontSize: "14px",
     borderRadius: "50px",
+    padding: "10px 30px",
     color: "var(--white-color)",
+    border: "2px solid transparent",
     backgroundColor: "var(--primary-color)",
     "&:hover": {
-      backgroundColor: "darkred",
+      color: "var(--primary-color)",
+      backgroundColor: "var(---white-color)",
+      border: "2px solid var(--primary-color)",
+    },
+    "&:active": {
+      color: "var(--primary-color)",
+      backgroundColor: "var(---white-color)",
+      border: "2px solid var(--primary-color)",
     },
   },
+
   secondaryButton: {
-    fontSize: "14px",
     borderRadius: "50px",
+    padding: "10px 30px",
     color: "var(--black-color)",
     backgroundColor: "var(--white-color)",
     "&:hover": {
-      backgroundColor: "darkred",
+      color: "var(--white-color)",
+      backgroundColor: "var(--primary-color)",
     },
+  },
+
+  mobileMenuButton: {
+    border: 0,
+    // color: "var(--black-color)",
+    // backgroundColor: "var(--white-color)",
+    // "&:hover": {
+    //   color: "var(--white-color)",
+    //   backgroundColor: "var(--primary-color)",
+    // },
   },
 });
 
