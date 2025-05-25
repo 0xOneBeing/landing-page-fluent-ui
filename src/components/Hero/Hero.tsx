@@ -1,19 +1,20 @@
 import {
-  Button,
+  // Button,
   Image,
-  Popover,
-  PopoverSurface,
-  PopoverTrigger,
+  // Popover,
+  // PopoverSurface,
+  // PopoverTrigger,
 } from "@fluentui/react-components";
 import { Sparkle24Filled } from "@fluentui/react-icons";
-import useStyles from "../../utils/Styles/useStyles";
+// import useStyles from "../../utils/Styles/useStyles";
+import GetStartedButton from "../GetStartedButton";
 
 const Hero = () => {
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return (
-    <div className="hero">
-      <div className="hero-text flex flex-col items-center justify-center text-center mb-4">
+    <div className="hero bg-white">
+      <div className="hero-text flex flex-col items-center justify-center text-center mb-4 pt-24">
         <Sparkle24Filled
           className="mb-2"
           style={{ color: "var(--black-color)" }}
@@ -23,7 +24,7 @@ const Hero = () => {
           Take control of your money-smarter, faster, with AI
         </h1>
 
-        <p className="text-sm w-full md:w-[750px]">
+        <p className="text-base w-full lg:w-[750px]">
           Say goodbye to spreadsheets and guesswork. Our AI-powered assustant
           gives you real-time insights, automates budgeting and helps you make
           smarter finiacial decisions. All in one intuitive dashboard.
@@ -35,24 +36,7 @@ const Hero = () => {
       </div>
 
       <div className="flex items-center justify-center text-center">
-        <Popover withArrow>
-          <PopoverTrigger disableButtonEnhancement>
-            <Button
-              size="large"
-              appearance="primary"
-              className={`${classes.primaryButton} mt-4 text-center`}
-            >
-              Get started
-            </Button>
-          </PopoverTrigger>
-          <PopoverSurface className="border border-[var(--primary-color)]">
-            <div>
-              <h3 className="font-semibold text-base mb-1">Good job!</h3>
-
-              <p>Feature coming soon</p>
-            </div>
-          </PopoverSurface>
-        </Popover>
+        <GetStartedButton />
       </div>
     </div>
   );
