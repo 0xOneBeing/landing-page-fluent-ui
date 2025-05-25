@@ -1,8 +1,8 @@
+import Favicon from "../Favicon";
+import Nav from "../Navigation/Nav";
 import { Button } from "@fluentui/react-components";
 import useStyles from "../../utils/Styles/useStyles";
 import { Navigation24Regular } from "@fluentui/react-icons";
-import Favicon from "../Favicon";
-import Nav from "../Navigation/Nav";
 
 const Header = () => {
   const classes = useStyles();

@@ -1,6 +1,6 @@
 import Favicon from "../Favicon";
-import GetStartedButton from "../GetStartedButton";
 import Nav from "../Navigation/Nav";
+import GetStartedButton from "../GetStartedButton";
 
 const Footer = () => {
   const navbar = [
@@ -39,7 +39,7 @@ const Footer = () => {
   ];
 
   return (
-    <section className="footer bg-white text-black">
+    <section className="footer bg-white text-black mb-4">
       <div className="flex flex-col gap-14 justify-center items-center text-center pt-48">
         <Favicon />
 
@@ -50,8 +50,6 @@ const Footer = () => {
         <GetStartedButton />
 
         <Nav options={navbar} />
-
-        <div className="w-full bg-[var(--primary-color)] p-3"></div>
       </div>
     </section>
   );

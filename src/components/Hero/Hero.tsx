@@ -1,22 +1,13 @@
-import {
-  // Button,
-  Image,
-  // Popover,
-  // PopoverSurface,
-  // PopoverTrigger,
-} from "@fluentui/react-components";
+import { Image } from "@fluentui/react-components";
 import { Sparkle24Filled } from "@fluentui/react-icons";
-// import useStyles from "../../utils/Styles/useStyles";
 import GetStartedButton from "../GetStartedButton";
 
 const Hero = () => {
-  // const classes = useStyles();
-
   return (
     <div className="hero bg-white">
       <div className="hero-text flex flex-col items-center justify-center text-center mb-4 pt-24">
         <Sparkle24Filled
-          className="mb-2"
+          className="mb-2 text-black"
           style={{ color: "var(--black-color)" }}
         />
 
@@ -41,4 +32,5 @@ const Hero = () => {
     </div>
   );
 };
+
 export default Hero;
