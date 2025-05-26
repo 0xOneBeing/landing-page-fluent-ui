@@ -6,6 +6,7 @@ import SponsoredBy from "./components/SponsoredBy/SponsoredBy";
 import OurFeatures from "./components/OurFeatures/OurFeature";
 import BenefitsOfAI from "./components/BenefitsOfAI/BenefitsOfAI";
 import Testimonial from "./components/Testimonial/Testimonial";
+import Pricing from "./components/Pricing/Pricing";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
           <BenefitsOfAI />
 
           <Testimonial />
+
+          <Pricing />
         </main>
 
         <footer className="footer">

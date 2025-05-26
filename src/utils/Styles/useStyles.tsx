@@ -31,6 +31,25 @@ const useStyles = makeStyles({
     },
   },
 
+  pricingButton: {
+    borderRadius: "50px",
+    padding: "20px 30px",
+    // color: "var(--white-color)",
+    border: ".5px solid transparent",
+    // backgroundColor: "var(--primary-color)",
+    width: "100%",
+    "&:hover": {
+      // color: "var(--primary-color)",
+      // backgroundColor: "var(--white-color)",
+      border: ".5px solid var(--primary-color)",
+    },
+    "&:active": {
+      // color: "var(--primary-color)",
+      // backgroundColor: "var(--white-color)",
+      border: ".5px solid var(--primary-color)",
+    },
+  },
+
   secondaryButton: {
     borderRadius: "50px",
     padding: "10px 30px",

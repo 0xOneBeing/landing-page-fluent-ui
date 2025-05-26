@@ -29,7 +29,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="w-full flex justify-between items-center bg-white pt-16 px-16">
+    <div className="w-full flex justify-between items-center bg-white pt-4 lg:pt-16 px-4 lg:px-16">
       <Favicon />
 
       {isMobileLayout ? (
