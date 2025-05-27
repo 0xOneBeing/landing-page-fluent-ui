@@ -48,7 +48,7 @@ export default function Pricing() {
   ];
 
   return (
-    <section className="mt-28">
+    <section className="mt-16 lg:mt-28">
       <SectionHeading heading="Pricing" />
 
       <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-9 ">

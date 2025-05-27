@@ -31,7 +31,7 @@ export default function SponsoredBy() {
   ];
 
   return (
-    <section className="mt-28">
+    <section className="mt-16 lg:mt-28">
       <SectionHeading heading="Sponsored by" />
 
       <div className="w-full px-4 grid grid-cols-3 lg:grid-cols-5 justify-center gap-16">

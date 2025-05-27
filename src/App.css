@@ -1,0 +1,9 @@
+.waitlist-input:focus-within {
+  /* width: 100%; */
+  /* padding: 24px 80px 24px 20px; */
+  /* border: 1px solid #ccc; */
+  /* border-radius: 0.5rem; */
+  border: 0 !important;
+  /* font-size: 1rem; */
+  /* box-sizing: border-box; */
+}

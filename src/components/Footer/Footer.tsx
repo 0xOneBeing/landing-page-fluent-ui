@@ -3,6 +3,8 @@ import Nav from "../Navigation/Nav";
 import GetStartedButton from "../GetStartedButton";
 
 const Footer = () => {
+  const isMobileLayout = window.innerWidth < 768;
+
   const navbar = [
     {
       label: "Home",
@@ -39,19 +41,26 @@ const Footer = () => {
   ];
 
   return (
-    <section className="footer bg-white text-black mb-4">
-      <div className="flex flex-col gap-14 justify-center items-center text-center pt-48">
-        <Favicon />
+    <>
+      <section className="footer bg-white text-black mb-4">
+        <div className="flex flex-col gap-14 justify-center items-center text-center pt-10 lg:pt-48">
+          <Favicon />
 
-        <h1 className="text-2xl font-bold text-black w-full lg:w-[411px]">
-          Get started to up your business with personal AI manager
-        </h1>
+          <h1 className="text-2xl font-bold text-black w-full lg:w-[411px]">
+            Get started to up your business with personal AI manager
+          </h1>
 
-        <GetStartedButton />
+          <GetStartedButton />
 
-        <Nav options={navbar} />
-      </div>
-    </section>
+          <Nav
+            orientation={isMobileLayout ? "vertical" : "horizontal"}
+            options={navbar}
+          />
+        </div>
+      </section>
+
+      <div className="w-full bg-[var(--primary-color)] p-3"></div>
+    </>
   );
 };
 

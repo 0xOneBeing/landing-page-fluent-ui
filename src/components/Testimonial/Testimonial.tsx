@@ -47,7 +47,7 @@ export default function Testimonial() {
   ];
 
   return (
-    <section className="mt-28">
+    <section className="mt-16 lg:mt-28">
       <SectionHeading heading="Testimonial" />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-3">

@@ -7,18 +7,19 @@ import OurFeatures from "./components/OurFeatures/OurFeature";
 import BenefitsOfAI from "./components/BenefitsOfAI/BenefitsOfAI";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Pricing from "./components/Pricing/Pricing";
+import WaitList from "./components/WaitList/WaitList";
 
 function App() {
   return (
     <>
-      <section className="App inter px-4 lg:px-10 bg-[rgba(249,251,250,1)]">
+      <section className="App inter bg-[rgba(249,251,250,1)]">
         <header className="header">
           <Header />
         </header>
 
-        <main className="main">
-          <Hero />
+        <Hero />
 
+        <main className="main px-4 lg:px-10">
           <SponsoredBy />
 
           <OurFeatures />
@@ -28,6 +29,8 @@ function App() {
           <Testimonial />
 
           <Pricing />
+
+          <WaitList />
         </main>
 
         <footer className="footer">
@@ -35,7 +38,6 @@ function App() {
         </footer>
       </section>
 
-      <div className="w-full bg-[var(--primary-color)] p-3"></div>
     </>
   );
 }

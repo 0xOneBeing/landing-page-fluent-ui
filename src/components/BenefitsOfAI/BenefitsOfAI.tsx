@@ -18,7 +18,7 @@ export default function BenefitsOfAI() {
   ];
 
   return (
-    <section className="mt-28">
+    <section className="mt-16 lg:mt-28">
       <SectionHeading heading="Benefits of AI" />
 
       <div>

@@ -4,7 +4,7 @@ import GetStartedButton from "../GetStartedButton";
 
 const Hero = () => {
   return (
-    <div className="hero bg-white">
+    <div className="hero bg-white pb-28 px-4">
       <div className="hero-text flex flex-col items-center justify-center text-center mb-4 pt-24">
         <Sparkle24Filled
           className="mb-2 text-black"

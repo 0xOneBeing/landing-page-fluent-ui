@@ -42,7 +42,7 @@ export default function OurFeatures() {
   ];
 
   return (
-    <section className="mt-28">
+    <section className="mt-16 lg:mt-28">
       <SectionHeading heading="Our Features" />
 
       <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-16 px-10">
